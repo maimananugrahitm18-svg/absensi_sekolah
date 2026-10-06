@@ -1,0 +1,32 @@
+/.phpunit.cache
+/node_modules
+/public/build
+/public/hot
+/public/storage
+/storage/*.key
+/vendor
+.env
+.env.backup
+.env.production
+Homestead.json
+Homestead.yaml
+auth.json
+npm-debug.log
+yarn-error.log
+/.fleet
+/.idea
+/.vscode
+
+# File zip hasil export
+*.zip
+
+# File upload lampiran (sudah tidak dipakai)
+/storage/app/public/lampiran-izin/
+
+# File sensitif / tidak perlu di repo
+cookies.txt
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db

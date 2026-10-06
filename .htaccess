@@ -1,0 +1,12 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    # Arahkan semua request ke folder public/ jika diletakkan di root / public_html
+    RewriteCond %{REQUEST_URI} !^/public/
+    RewriteRule ^(.*)$ public/$1 [L]
+</IfModule>
+
+# Amankan file sensitif seperti .env, composer, git
+<FilesMatch "^\.|\.env|composer\.(json|lock)|package(-lock)?\.json">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
